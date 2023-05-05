@@ -53,12 +53,12 @@ export const OcrCamera = () => {
           className="w-full h-full object-cover rounded-xl"
           
         />
-        <div className="bg-light rounded-full px-4 py-2 mb-6" style={{ display: "flex", position: "absolute",  gap: "2rem" }}>
-          <button onClick={capture}>
+        <div className="bg-light rounded-full mb-6 h-10" style={{ display: "flex", position: "absolute",  gap: "2rem" }}>
+          <button onClick={capture}className="rounded-full px-4 py-2 hover:backdrop-brightness-200">
             Capture
           </button>
 
-          <button onClick={() => fileInputRef.current.click()}>
+          <button onClick={() => fileInputRef.current.click()}className="rounded-full px-4 py-2 hover:backdrop-brightness-200">
             Upload
             <form encType="multipart/form-data">
               <input ref={fileInputRef} type='file' hidden name='filename'
