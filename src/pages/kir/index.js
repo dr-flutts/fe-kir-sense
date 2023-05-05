@@ -8,8 +8,8 @@ const KirCamera = () => {
   return (
     <Container>
       <Header label="Buka Kamera" menu={menuIcons.CAMERA} showBackButton />
-      <Container className="bg-light items-center justify-center p-6">
-        <Container className="bg-secondary rounded-xl flex items-center justify-center">
+      <Container className="bg-light items-center justify-center p-6 h-[79%]">
+        <Container className="bg-secondary rounded-xl flex items-center justify-end">
           <OcrCamera />
         </Container>
       </Container>

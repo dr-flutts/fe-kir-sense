@@ -46,14 +46,14 @@ export const OcrCamera = () => {
 
   return (
     <>
-      <div style={{ width: "50%" }} key={0}>
-        <Webcam
+       <Webcam
           audio={false}
           ref={webcamRef}
           screenshotFormat="image/jpeg"
-          hidden={true}
+          className="w-full h-full object-cover rounded-xl"
+          
         />
-        <div>
+        <div className="bg-light rounded-full px-4 py-2 mb-6" style={{ display: "flex", position: "absolute",  gap: "2rem" }}>
           <button onClick={capture}>
             Capture
           </button>
@@ -68,7 +68,6 @@ export const OcrCamera = () => {
             </form>
           </button>
         </div>
-      </div>
-    </>
+      </>
   );
 };
