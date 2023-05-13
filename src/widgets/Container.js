@@ -1,5 +1,5 @@
-const Container = ({ id = "", className = "", children, ...style }) => (
-  <div id={id} style={{...style}} className={`flex flex-col w-full h-full ${className}`}>
+const Container = ({ id = "", className = "", children, style, hidden = false }) => (
+  <div hidden={hidden} id={id} style={{ ...style }} className={`flex ${className} flex-col w-full h-full`}>
     {children}
   </div>
 );

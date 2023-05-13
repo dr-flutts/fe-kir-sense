@@ -1,20 +1,21 @@
 import { Link } from "react-router-dom";
+import { menuIcons } from "../helpers/defaultValues";
 
 const Main = ({ children }) => {
   return (
     <div className="flex justify-between items-center h-full">
       <div className="flex flex-col bg-light rounded-full py-12 px-2">
         <Link to="/camera">
-          <img src={require("../assets/images/camera.png")} alt="camera" className="mx-2 my-8 hover:bg-black" width={36} />
+          <img src={menuIcons.CAMERA} alt="camera" className="mx-2 my-8 hover:opacity-60" width={36} />
         </Link>
         <Link to="/info">
-          <img src={require("../assets/images/info.png")} alt="info" className="mx-2 my-8 hover:bg-black" width={36} />
+          <img src={menuIcons.INFO} alt="info" className="mx-2 my-8 hover:opacity-60" width={36} />
         </Link>
         <Link to="/history">
-          <img src={require("../assets/images/clock.png")} alt="clock" className="mx-2 my-8 hover:bg-black" width={36} />
+          <img src={menuIcons.HISTORY} alt="clock" className="mx-2 my-8 hover:opacity-60" width={36} />
         </Link>
         <Link to="/data">
-          <img src={require("../assets/images/add-data.png")} alt="data" className="mx-2 my-8 hover:bg-black" width={36} />
+          <img src={menuIcons.DATA} alt="data" className="mx-2 my-8 hover:opacity-60" width={36} />
         </Link>
       </div>
       {children}

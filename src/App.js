@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./widgets/Layout";
 import Loading from "./widgets/Loading";
+import Instruction from "./pages/instruction";
 
 const Welcome = React.lazy(() => import('./pages/welcome'));
 const Dashboard = React.lazy(() => import('./pages/dashboard'));
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/" element={<Welcome />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/camera" element={<KirCamera />} />
+            <Route path="/info" element={<Instruction />} />
             <Route path="/history" element={<History />} />
             <Route path="/data" element={<Data />} />
             <Route path="*" element={<ErrorPage code="404" message="Halaman tidak ditemukan!" />} />
