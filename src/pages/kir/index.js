@@ -67,7 +67,7 @@ const KirCamera = () => {
   return (
     <Container>
       <Header label="Buka Kamera" menu={menuIcons.CAMERA} showBackButton />
-      <Container className="bg-light items-center justify-center p-6 h-[80%]">
+      <Container className="bg-light items-center justify-center p-6 h-[75%]">
         <Container id="popup" className="bg-secondary rounded-xl flex items-center justify-center hidden gap-4">
           <Container className="h-80 w-2/4 bg-primary rounded-xl flex items-center justify-evenly relative">
             <div className="flex flex-row items-center justify-center h-44 w-3/4 bg-secondary rounded-xl relative">
