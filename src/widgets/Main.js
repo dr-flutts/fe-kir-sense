@@ -13,6 +13,9 @@ const Main = ({ children }) => {
         <Link to="/history">
           <img src={require("../assets/images/clock.png")} alt="clock" className="mx-2 my-8 hover:bg-black" width={36} />
         </Link>
+        <Link to="/data">
+          <img src={require("../assets/images/add-data.png")} alt="data" className="mx-2 my-8 hover:bg-black" width={36} />
+        </Link>
       </div>
       {children}
     </div>
