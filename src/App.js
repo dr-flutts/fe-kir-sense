@@ -2,13 +2,13 @@ import React, { Suspense } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./widgets/Layout";
 import Loading from "./widgets/Loading";
-import Instruction from "./pages/instruction";
 
 const Welcome = React.lazy(() => import('./pages/welcome'));
 const Dashboard = React.lazy(() => import('./pages/dashboard'));
 const KirCamera = React.lazy(() => import('./pages/kir'));
 const History = React.lazy(() => import('./pages/history'));
 const Data = React.lazy(() => import('./pages/data'));
+const Instruction = React.lazy(() => import('./pages/instruction'));
 const ErrorPage = React.lazy(() => import('./pages/error'));
 
 const App = () => {
