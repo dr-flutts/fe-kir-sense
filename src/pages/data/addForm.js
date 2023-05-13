@@ -43,7 +43,7 @@ export const AddForm = () => {
                 className="focus:outline-none border border-primary rounded px-1"
                 id="plat"
                 name="plat"
-                placeholder="BL 123 AB"
+                placeholder="BL 7846 LK"
               />
             </div>
             <div className="flex flex-col">
@@ -51,7 +51,7 @@ export const AddForm = () => {
               <Field 
                 id="nama"
                 name="nama"
-                placeholder="HAMIM" 
+                placeholder="BUDI" 
                 className="focus:outline-none border border-primary rounded px-1"  
               />
             </div>
@@ -65,7 +65,7 @@ export const AddForm = () => {
                 className="focus:outline-none border border-primary rounded px-1"
               />
             </div>
-            <button className="border border-primary rounded mt-6" type="submit">Submit</button>
+            <button className="border border-primary rounded mt-6" type="submit">Tambah Data</button>
           </Form>
         </Formik>
       </div>
