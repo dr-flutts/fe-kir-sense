@@ -5,4 +5,4 @@ export const menuIcons = {
   DATA: require("../assets/images/add-data.png"),
 };
 
-export const servicePath = "http://localhost:5000";
+export const servicePath = "https://be-kir-sense-production.up.railway.app";

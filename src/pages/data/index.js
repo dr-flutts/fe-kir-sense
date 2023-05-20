@@ -11,7 +11,7 @@ const Data = () => {
   const [data, setData] = useState([]);
   
   useEffect(() => {
-    axios.get("http://localhost:5000/data")
+    axios.get("https://be-kir-sense-production.up.railway.app/data")
       .then((res) => setData(res.data))
   }, [])
 
@@ -26,7 +26,7 @@ const Data = () => {
   const handleSearch = (e) => {
     if (e.key === 'Enter') {
       if (search.length > 0) {
-        axios.get(`http://localhost:5000/data?plat=${search}`)
+        axios.get(`https://be-kir-sense-production.up.railway.app/data?plat=${search}`)
           .then((res) => {
             if (res.data === "") {
               setData([])
@@ -35,7 +35,7 @@ const Data = () => {
             }
           })
       } else {
-        axios.get(`http://localhost:5000/data`)
+        axios.get(`https://be-kir-sense-production.up.railway.app/data`)
           .then((res) => {
             setData(res.data)
           })
