@@ -7,7 +7,7 @@ const Welcome = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (document.readyState !== "complete") {
+    if (document.readyState !== "interactive") {
       setTimeout(() => {
         navigate('/dashboard');
       }, 1000);
