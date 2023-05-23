@@ -11,7 +11,7 @@ const KirCamera = () => {
   const [search, setSearch] = useState("");
   
   useEffect(() => {
-    axios.get("https://be-kir-sense.up.railway.app/history")
+    axios.get("https://be-kir-sense-production-dddf.up.railway.app/history")
       .then((res) => setHistory(res.data))
   }, [])
 
@@ -22,7 +22,7 @@ const KirCamera = () => {
   const handleSearch = (e) => {
     if (e.key === 'Enter') {
       if (search.length > 0) {
-        axios.get(`https://be-kir-sense.up.railway.app/history?plat=${search}`)
+        axios.get(`https://be-kir-sense-production-dddf.up.railway.app/history?plat=${search}`)
           .then((res) => {
             if (res.data === "") {
               setHistory([])
@@ -31,7 +31,7 @@ const KirCamera = () => {
             }
           })
       } else {
-        axios.get(`https://be-kir-sense.up.railway.app/history`)
+        axios.get(`https://be-kir-sense-production-dddf.up.railway.app/history`)
           .then((res) => {
             setHistory(res.data)
           })

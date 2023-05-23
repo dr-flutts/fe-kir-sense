@@ -20,7 +20,7 @@ export const AddForm = () => {
             tahun: 0,
           }}
           onSubmit={async (values) => {
-            await axios.post("https://be-kir-sense.up.railway.app/data", values)
+            await axios.post("https://be-kir-sense-production-dddf.up.railway.app/data", values)
               .then((response) => {
                 if (response.status === 201) {
                   NotificationManager.success("Berhasil menambah data", "Berhasil", 3000);
